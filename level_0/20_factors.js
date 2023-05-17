@@ -7,18 +7,14 @@ n의 약수를 오름차순으로 담은 배열을 return하도록 solution 함�
 -> 1 ≤ n ≤ 10,000
 */
 
-// const solution = (n) => {
-//     let array = [];
-//     for(let i=1; i<=n; i++) {
-//         if(n % i === 0)
-//             array.push(i);
-//     }
-
-//     return array;
-// }
-
 const solution = (n) => {
-    console.log(Array(n).fill(0))
+    let array = [];
+    for(let i=1; i<=n; i++) {
+        if(n % i === 0)
+            array.push(i);
+    }
+
+    return array;
 }
 
 solution(24);   // [1, 2, 3, 4, 6, 8, 12, 24]

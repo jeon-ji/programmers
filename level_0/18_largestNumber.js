@@ -8,18 +8,18 @@
 -> array에 중복된 숫자는 없습니다. 
 */
 
-// const solution = (array) => {
-//     let resNum = 0;
-//     let resIndex = 0;
-//     array.map((num, index) => {
-//         if(resNum < num) {
-//             resNum = num;
-//             resIndex = index;
-//         }
-//     })
+const solution = (array) => {
+    let resNum = 0;
+    let resIndex = 0;
+    array.map((num, index) => {
+        if(resNum < num) {
+            resNum = num;
+            resIndex = index;
+        }
+    })
 
-//     return [resNum, resIndex];
-// }
+    return [resNum, resIndex];
+}
 
 solution([1, 8, 3]);    // [8, 1]
 solution([9, 10, 11, 8]);   // [11, 2]
